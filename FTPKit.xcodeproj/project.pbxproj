@@ -22,6 +22,21 @@
 		07F23C4D18CA4C43002BDF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F23C4C18CA4C43002BDF93 /* UIKit.framework */; };
 		07F23C5318CA4C43002BDF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07F23C5118CA4C43002BDF93 /* InfoPlist.strings */; };
 		07F23C5518CA4C43002BDF93 /* FTPKit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F23C5418CA4C43002BDF93 /* FTPKit_Tests.m */; };
+		37A6B348206B2754003DA950 /* FTPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F27BA1D61802FE7E00584A9E /* FTPKit.h */; };
+		37A6B349206B2754003DA950 /* FTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F27BA1F71802FF1800584A9E /* FTPClient.h */; };
+		37A6B34A206B2754003DA950 /* FTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BA1F81802FF1800584A9E /* FTPClient.m */; };
+		37A6B34B206B2754003DA950 /* FTPCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = F27BA2051802FF1800584A9E /* FTPCredentials.h */; };
+		37A6B34C206B2754003DA950 /* FTPCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BA2061802FF1800584A9E /* FTPCredentials.m */; };
+		37A6B34D206B2754003DA950 /* FTPHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = F27BA1FB1802FF1800584A9E /* FTPHandle.h */; };
+		37A6B34E206B2754003DA950 /* FTPHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BA1FC1802FF1800584A9E /* FTPHandle.m */; };
+		37A6B34F206B2759003DA950 /* NSError+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 072A829718CC2450001E640B /* NSError+Additions.h */; };
+		37A6B350206B2759003DA950 /* NSError+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072A829818CC2450001E640B /* NSError+Additions.m */; };
+		37A6B351206B2759003DA950 /* NSString+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 072A829918CC2450001E640B /* NSString+Additions.h */; };
+		37A6B352206B2759003DA950 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072A829A18CC2450001E640B /* NSString+Additions.m */; };
+		37A6B353206B275D003DA950 /* ftplib.h in Headers */ = {isa = PBXBuildFile; fileRef = 076BD46218CFB76E00517DEE /* ftplib.h */; };
+		37A6B354206B275D003DA950 /* ftplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 076BD46118CFB76E00517DEE /* ftplib.c */; };
+		37A6B355206B2776003DA950 /* FTPKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = F27BA1D51802FE7E00584A9E /* FTPKit-Prefix.pch */; };
+		37A6B356206B277A003DA950 /* FTPKit+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F23C4318CA33FC002BDF93 /* FTPKit+Protected.h */; };
 		F27BA20B1802FF1800584A9E /* FTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BA1F81802FF1800584A9E /* FTPClient.m */; };
 		F27BA20D1802FF1800584A9E /* FTPHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BA1FC1802FF1800584A9E /* FTPHandle.m */; };
 		F27BA2121802FF1800584A9E /* FTPCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BA2061802FF1800584A9E /* FTPCredentials.m */; };
@@ -69,6 +84,7 @@
 		07F23C5218CA4C43002BDF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07F23C5418CA4C43002BDF93 /* FTPKit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTPKit_Tests.m; sourceTree = "<group>"; };
 		07F23C5618CA4C43002BDF93 /* FTPKit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPKit Tests-Prefix.pch"; sourceTree = "<group>"; };
+		37A6B33F206B2748003DA950 /* libFTPKit—Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFTPKit—Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27BA1CE1802FE7E00584A9E /* libFTPKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTPKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27BA1D11802FE7E00584A9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F27BA1D51802FE7E00584A9E /* FTPKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -90,6 +106,13 @@
 				07F23C4A18CA4C43002BDF93 /* XCTest.framework in Frameworks */,
 				07F23C4D18CA4C43002BDF93 /* UIKit.framework in Frameworks */,
 				07F23C4B18CA4C43002BDF93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A6B33C206B2748003DA950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +197,7 @@
 			children = (
 				F27BA1CE1802FE7E00584A9E /* libFTPKit.a */,
 				07F23C4818CA4C43002BDF93 /* FTPKit Tests.xctest */,
+				37A6B33F206B2748003DA950 /* libFTPKit—Mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +240,25 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		37A6B33D206B2748003DA950 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A6B34F206B2759003DA950 /* NSError+Additions.h in Headers */,
+				37A6B348206B2754003DA950 /* FTPKit.h in Headers */,
+				37A6B349206B2754003DA950 /* FTPClient.h in Headers */,
+				37A6B356206B277A003DA950 /* FTPKit+Protected.h in Headers */,
+				37A6B355206B2776003DA950 /* FTPKit-Prefix.pch in Headers */,
+				37A6B351206B2759003DA950 /* NSString+Additions.h in Headers */,
+				37A6B34B206B2754003DA950 /* FTPCredentials.h in Headers */,
+				37A6B34D206B2754003DA950 /* FTPHandle.h in Headers */,
+				37A6B353206B275D003DA950 /* ftplib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		07F23C4718CA4C43002BDF93 /* FTPKit Tests */ = {
 			isa = PBXNativeTarget;
@@ -234,6 +277,23 @@
 			productName = "FTPKit Tests";
 			productReference = 07F23C4818CA4C43002BDF93 /* FTPKit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37A6B33E206B2748003DA950 /* FTPKit—Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37A6B345206B2748003DA950 /* Build configuration list for PBXNativeTarget "FTPKit—Mac" */;
+			buildPhases = (
+				37A6B33B206B2748003DA950 /* Sources */,
+				37A6B33C206B2748003DA950 /* Frameworks */,
+				37A6B33D206B2748003DA950 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FTPKit—Mac";
+			productName = "FTPKit—Mac";
+			productReference = 37A6B33F206B2748003DA950 /* libFTPKit—Mac.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		F27BA1CD1802FE7E00584A9E /* FTPKit */ = {
 			isa = PBXNativeTarget;
@@ -280,6 +340,7 @@
 			targets = (
 				F27BA1CD1802FE7E00584A9E /* FTPKit */,
 				07F23C4718CA4C43002BDF93 /* FTPKit Tests */,
+				37A6B33E206B2748003DA950 /* FTPKit—Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -301,6 +362,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F23C5518CA4C43002BDF93 /* FTPKit_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37A6B33B206B2748003DA950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A6B34E206B2754003DA950 /* FTPHandle.m in Sources */,
+				37A6B34C206B2754003DA950 /* FTPCredentials.m in Sources */,
+				37A6B34A206B2754003DA950 /* FTPClient.m in Sources */,
+				37A6B350206B2759003DA950 /* NSError+Additions.m in Sources */,
+				37A6B352206B2759003DA950 /* NSString+Additions.m in Sources */,
+				37A6B354206B275D003DA950 /* ftplib.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +448,57 @@
 				INFOPLIST_FILE = "FTPKit Tests/FTPKit Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		37A6B346206B2748003DA950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V7QY36F2JR;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTPKit/FTPKit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		37A6B347206B2748003DA950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V7QY36F2JR;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTPKit/FTPKit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -518,6 +643,15 @@
 			buildConfigurations = (
 				07F23C5918CA4C43002BDF93 /* Debug */,
 				07F23C5A18CA4C43002BDF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37A6B345206B2748003DA950 /* Build configuration list for PBXNativeTarget "FTPKit—Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A6B346206B2748003DA950 /* Debug */,
+				37A6B347206B2748003DA950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
